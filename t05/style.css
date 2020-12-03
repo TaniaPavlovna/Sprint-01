@@ -1,0 +1,73 @@
+.parent > div {
+	float: left;
+	margin-right: 5px;
+}
+
+.card1 {
+	width: 270px;
+	height: 140px;
+	border-radius: 5px;
+	background: radial-gradient(#4568DC, #B06AB3);
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.card2 {
+	width: 270px;
+	height: 140px;
+	border-radius: 5px;
+	background: radial-gradient(#e52d27, #b31217);
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.card3 {
+	width: 270px;
+	height: 140px;
+	border-radius: 5px;
+	background: radial-gradient(#000, #61045F);
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.card4 {
+	width: 270px;
+	height: 140px;
+	border-radius: 5px;
+	background: radial-gradient(#e52d27, #000);
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.text1 {
+	color: white;
+	font-size: 12px;
+	font-family: Verdana;
+	text-align: right;
+	padding: 10px;
+	margin-bottom: -2.5em;
+}
+
+.text2 {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 9px;
+	font-family: Verdana;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.img {
+	height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	top: -5.88em;
+	position: relative;
+}
+
+.img2 {
+	height: 160px;
+	margin-left: auto;
+	margin-right: auto;
+	top: -4.6em;
+	position: relative;
+}
