@@ -1,0 +1,138 @@
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: rgb(146, 145, 145);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	color: rgb(255, 111, 135);
+}
+
+h3 {
+	color: rgb(189, 42, 145);
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+}
+
+#form {
+	width: 880px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btn1,
+.btn2 {
+	margin-right: 20px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+label {
+	background: white;
+	height: auto;
+	width: 240px;
+	display: block;
+	border: 1px solid rgb(189, 42, 145);
+	color: black;
+	font-size: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: all 1s ease;
+	position: relative;
+	padding: 5px;
+	border-radius: 50px;
+	margin: 20px;
+}
+
+label:before{
+	content:"";
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	border-radius: 100%;
+	right: 20px;
+	top: 30%;
+	transition: border 0.7s ease
+}
+
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2],
+#label-3:checked ~ label[for=label-3],
+#label-4:checked ~ label[for=label-4],
+#label-5:checked ~ label[for=label-5],
+#label-6:checked ~ label[for=label-6] {
+	background: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+	box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+	border-bottom: 1px solid #34495E;
+	color: white;
+}
+
+#label-1:checked ~ label[for=label-1]:before,
+#label-2:checked ~ label[for=label-2]:before,
+#label-3:checked ~ label[for=label-3]:before,
+#label-4:checked ~ label[for=label-4]:before,
+#label-5:checked ~ label[for=label-5]:before,
+#label-6:checked ~ label[for=label-6]:before {
+	background: url("https://i.imgur.com/eoPQ05r.png") no-repeat center center;
+}
+
+/*form*/
+.send {
+	width: 880px;
+	height: 50px;
+	background-color: rgb(255, 111, 135);
+	border: 0px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 30px;
+	outline: none;
+}
+
+.form-control1 input {
+	border: 0;
+	border-bottom: 1px solid rgb(148, 148, 148);
+	padding: 15px 0;
+	display: block;
+	font-size: 18px;
+	font-family: 'Muli', sans-serif;
+	width: 880px;
+	transition: 0.1s ease-in;
+	outline: none;
+}
+
+.form-control input {
+	border: 0;
+	border-bottom: 1px solid rgb(148, 148, 148);
+	padding: 15px 0;
+	font-size: 18px;
+	font-family: 'Muli', sans-serif;
+	width: 420px;
+	transition: 0.1s ease-in;
+	outline: none;
+}
+
+fieldset {
+	border: 0;
+}
+
+.mrg {
+	margin-right: 35px;
+}
+
