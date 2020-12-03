@@ -1,0 +1,16 @@
+textarea {
+	border: 2px solid palevioletred;
+	margin-top: 15px;
+}
+
+fieldset {
+	border: 2px solid palevioletred;
+}
+
+div {
+	margin-top: 15px;
+}
+
+.slider {
+	margin-top: 15px;
+}

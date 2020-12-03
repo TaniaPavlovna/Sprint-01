@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Superhero application</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Superhero Form</h1>
+		<form action="index.html"></form>
+		<fieldset>
+			<legend>About the Superhero</legend>
+				<label for="name">Real Name</label>
+				<input type="text" name="Superhero real name" placeholder="Superhero real name">
+					<label for="name">Superhero Name</label>
+					<input type="text" id="lname" name="Superhero alias" placeholder="Superhero alias">
+						<label for="name">Age</label>
+						<input type="number" min="1" max="999" step="1" value="0"><br>
+							<label for="text">About</label>
+							<textarea maxlength="500" cols="70" rows="5" placeholder="Information about the superhero, max 500 symbols"></textarea><br>
+							<label for="name" class="slider">Photo:</label>
+							<input type="file" name="file" class="slider">
+		</fieldset>
+		<fieldset>
+			<legend>Power</legend>
+				<input type="checkbox" name="powers" value="Telekinesis"> Telekinesis
+				<input type="checkbox" name="powers" value="Super strength or speed"> Super strength or speed
+				<input type="checkbox" name="powers" value="Shapeshifting"> Shapeshifting
+				<input type="checkbox" name="powers" value="Flight"> Flight
+				<input type="checkbox" name="powers" value="Elemental control"> Elemental control
+				<input type="checkbox" name="powers" value="Other"> Other
+			<div>
+				<label for="name">Level of control:</label>
+				<input type="range" min="0" max="10" step="1" value="1">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Origin of Powers</legend>
+				<input type="radio" id="male" name="powers" value="Unknown">
+				<label for="male">Unknown</label>
+				<input type="radio" id="male" name="powers" value="Freak lab accident">
+				<label for="male">Freak lab accident</label>
+				<input type="radio" id="male" name="powers" value="Choosen by an ancient wise being">
+				<label for="male">Choosen by an ancient wise being</label>
+				<input type="radio" id="male" name="powers" value="The superhero is not human">
+				<label for="male">The superhero is not human</label>
+				<input type="radio" id="male" name="powers" value="Other">
+				<label for="male">Other</label>
+		</fieldset>
+		<div>
+			<input name="submit" type="submit" value="Send">
+			<input name="reset" type="reset" value="Clear">
+		</div>
+	</body>
+</html>
