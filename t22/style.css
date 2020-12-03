@@ -1,0 +1,391 @@
+body {
+background-color: rgba(2, 9, 44, 0.87);
+}
+
+#form {
+	display: grid;
+	position: relative;
+	width: 100%;
+}
+
+.grid1 {grid-area: grid1;}
+.grid2 {grid-area: grid2;}
+.grid3 {grid-area: grid3;}
+.grid4 {grid-area: grid4;}
+.grid5 {grid-area: grid5;}
+
+.grid-container {
+	display: grid;
+	position: absolute;
+	background-color: rgba(5, 5, 48, 0.836);
+	grid-template-columns: 400px 400px;
+	grid-template-rows: 100px 100px 100px;
+	grid-gap: 10px;
+	padding: 10px;
+	grid-template-areas:
+	"grid1 grid4"
+	"grid2 grid5"
+	"grid3 .";
+}
+
+.grid1,
+.grid2,
+.grid3 {
+	margin-top: 15px;
+	margin-left: 20px;
+	position: absolute;
+}
+
+.grid4 {
+	margin-top: 40px;
+	position: absolute;
+}
+
+.grid5 {
+	margin-top: 20px;
+}
+
+div {
+	color: white;
+}
+
+/*select a typeface*/
+.typeface {
+	background-color: rgba(47, 47, 143, 0.637);
+	color: white;
+	margin-top: 10px;
+}
+
+/*Weight*/
+:checked {
+	margin-top: 20px;
+}
+
+/*adjust font size*/
+.slider {
+    margin-top: 30px;
+    width: 200px;
+	height: 1px;
+}
+
+.slider:before {
+	content: "A";
+	font-size: 14px;
+	margin-top: 20px;
+	position: absolute;
+	display: block;
+	color: white;
+}
+
+.slider:after {
+	content: "A";
+	font-size: 25px;
+	margin-top: 10px;
+	right: 0px;
+	display: block;
+	color: white;
+}
+
+/*pick a color - checkboxes*/
+.container {
+	display: flex;
+	position: absolute;
+	margin-left: -20px;
+}
+
+.container > div {
+margin: 20px;
+margin-top: 10px;
+}
+
+.round,
+.round1,
+.round2,
+.round3,
+.round4 {
+	position: relative;
+}
+
+/*blue*/
+.round label {
+	background-color: rgba(15, 15, 253, 0.767);
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 28px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 28px;
+}
+
+.round label:after {
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	transform: rotate(-45deg);
+	width: 12px;
+}
+
+.round input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+}
+
+/*green*/
+.round1 label {
+	background-color: rgba(0, 126, 0, 0.815);
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 28px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 28px;
+}
+
+.round1 label:after {
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	transform: rotate(-45deg);
+	width: 12px;
+}
+
+.round1 input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.round1 input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+}
+
+/*pink*/
+.round2 label {
+	background-color: rgba(255, 70, 101, 0.842);
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 28px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 28px;
+}
+
+.round2 label:after {
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	transform: rotate(-45deg);
+	width: 12px;
+}
+
+.round2 input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.round2 input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+}
+
+/*yellow*/
+.round3 label {
+	background-color: rgba(240, 240, 52, 0.89);
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 28px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 28px;
+}
+
+.round3 label:after {
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	transform: rotate(-45deg);
+	width: 12px;
+}
+
+.round3 input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.round3 input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+}
+
+/*orange*/
+.round4 label {
+	background-color: rgba(252, 170, 17, 0.925);
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 28px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 28px;
+}
+
+.round4 label:after {
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 7px;
+	opacity: 0;
+	position: absolute;
+	top: 8px;
+	transform: rotate(-45deg);
+	width: 12px;
+}
+
+.round4 input[type="checkbox"] {
+	visibility: hidden;
+}
+
+.round4 input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+}
+
+/*sidemenu*/
+.sidemenu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	justify-content: center;
+    top: 20px;
+	left: 830px;
+    background: rgba(21, 24, 56, 0.842);
+	border-radius: 0 20px 20px 0;
+}
+
+.sidemenu img {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*toggle dark UI*/
+.knobs,
+.layer {
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button {
+    position: absolute;
+
+	left: 200px;
+    width: 74px;
+    height: 36px;
+    margin: -25px auto 0 auto;
+    overflow: hidden;
+}
+
+.button.r, .button.r .layer {
+    border-radius: 100px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #c3e8f8;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* button 1 */
+#button-1 .knobs:before, #button-1 .knobs:after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 20px;
+    height: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #406cff;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .knobs:before {
+    content: 'night';
+}
+
+#button-1 .knobs:after {
+    content: 'day';
+}
+
+#button-1 .knobs:after {
+    top: -28px;
+    right: 4px;
+    left: auto;
+    background-color: #ffbc3e;
+}
+
+#button-1 .checkbox:checked + .knobs:before {
+    top: -28px;
+}
+
+#button-1 .checkbox:checked + .knobs:after {
+    top: 4px;
+}
+
+#button-1 .checkbox:checked ~ .layer {
+    background-color: #fad4bb;
+}
