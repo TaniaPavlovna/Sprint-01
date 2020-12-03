@@ -1,0 +1,40 @@
+body {
+	margin-top: 50px;
+}
+
+:root {
+	--width: 100%;
+}
+
+.box {
+	position: relative;
+	width: 100%;
+	max-width: calc(var(--width) - 200px);
+	padding: 15px;
+	background: #ddd;
+}
+
+.box::before,
+.box::after {
+	content: '';
+	position: absolute;
+	border: 1px solid #444;
+}
+
+.box::before {
+	left: 0;
+	right: 0;
+	top: -20px;
+	bottom: -25px;
+	border-top: none;
+	border-bottom: none;
+}
+
+.box::after {
+	top: 0;
+	bottom: 0;
+	left: -25px;
+	right: -25px;
+	border-left: none;
+	border-right: none;
+}
