@@ -1,0 +1,33 @@
+.container > div {
+	float: left;
+	padding: 2px;
+}
+
+.weather {
+	margin-top: 20px;
+}
+
+.weather:hover {
+	box-shadow: 0 0 15px black;
+	padding:0px;
+}
+
+.gradus {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	text-align: center;
+}
+
+.data {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	background-color: cornflowerblue;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	margin-top: -20px;
+}
